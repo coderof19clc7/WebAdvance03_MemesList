@@ -37,7 +37,7 @@ function MemesList() {
         return galleryUI;
     }
     
-    function render3Button() {
+    function renderButtons() {
         const buttonsList = [];
         for (let i = 2; i <= 5; i++) {
             buttonsList.push(
@@ -60,7 +60,7 @@ function MemesList() {
     return (
         <div className="App">
             <Row justify={'space-around'} gutter={[{md: 12, xs: 7},30]}>
-                {render3Button()}
+                {renderButtons()}
             </Row>
             <Divider/>
             <Row justify={'space-around'} gutter={[{md: 12, xs: 7},30]}>
